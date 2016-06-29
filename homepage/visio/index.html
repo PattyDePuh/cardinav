@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flughäfen - Übersicht</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ol.css" type="text/css">
+    <script src="../libs/ol-debug.js"></script>
+    <script src="../libs/proj4.js"></script>
+    
+    <script src="brain.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onload="init()">
+    <p>Ziehe die Ergebnis-Datei in den Browser für eine Ergebnis-Visualisierung<p>
+    Färbung: 
+    <select id="source_selector" onchange="setLayerStyle(this)">
+    <option>Laufgeschwindigkeit</option>
+    <option>Steigung</option>
+    <option>Höhenmeter</option>
+    <option>Popularität</option>
+    <option>Terrain</option>
+    </select>
+    <div id="map" class="map"></div>
+    <div id="upload_panel" title="Datei-Upload">
+        Upload
+    </div>
+    
+</body>
+</html>

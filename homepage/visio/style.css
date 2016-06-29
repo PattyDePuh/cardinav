@@ -1,0 +1,90 @@
+
+html, body {
+	height: 100%;
+}
+
+.canvas_white{
+	background-color: #FFF;
+	border-radius: 8px;
+	opacity: 0.8;
+}
+
+.number_red{
+	background-color: #ff1a1a;
+	border-radius: 8px;
+	padding: 4px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.name_white{
+	padding: 4px;
+}
+
+#upload_panel{
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	top: 1em;
+	right: 1em;
+
+	font: 30px arial, sans-serif;
+	color: white;
+
+	/*width: 2.4em;
+	height: 2.4em;*/
+	border: 0.2em solid #FFFFFF;
+	border-radius: 0.2em;
+	opacity: 0.8;
+	background-color: rgb(140, 140, 240);
+	background-image: url("upload_icon.svg");
+	background-size: 16em 16em;
+    background-repeat: no-repeat;
+    background-position: center; 
+    visibility: hidden;
+}
+/*
+#upload_panel:hover{
+	width: 21em;
+	height: 21em;
+	border-radius: 2em;
+	background-image: url("upload_icon.svg");
+	background-size: 20em 20em;
+    background-repeat: no-repeat;
+    -webkit-animation: expand-panel 1;
+    -webkit-animation-duration: 2s;
+    animation: expand-panel 1;
+    animation-duration: 2s;
+}
+*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes expand-panel {
+    from {
+    	width: 2.4em;
+		height: 2.4em;
+		border-radius: 0.2em;
+    	background-size: 2em 2em;
+    }
+    to {
+    	width: 21em;
+		height: 21em;
+		border-radius: 2em;
+    	background-size: 20em 20em;
+    }
+}
+
+@keyframes expand-panel {
+    from {
+    	width: 2.4em;
+		height: 2.4em;
+		border-radius: 0.2em;
+    	background-size: 2em 2em;
+    }
+    to {
+    	width: 21em;
+		height: 21em;
+		border-radius: 2em;
+    	background-size: 20em 20em;
+    }
+}
