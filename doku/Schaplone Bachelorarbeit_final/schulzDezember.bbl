@@ -1,0 +1,56 @@
+\begin{thebibliography}{}
+
+\bibitem[Benz, 2013]{benz2013}
+Benz, S.\ (2013).
+\newblock {\em Algorithmen zur automatischen Selektion von
+  Straßennetzwerken\/}.
+\newblock M. Sc., Universität Zürich.
+
+\bibitem[Chimani \btxetalshort{.}, 2014]{haunert2014}
+Chimani, M., T.~van Dijk \btxandshort{.}\ J.~Haunert\ (2014).
+\newblock {\em How to Eat a Graph: Computing Selection Sequences for the
+  Continuous Generalization of Road Network\/}.
+\newblock \Btxinshort{.}\ {\em Proc. 22st ACM SIGSPATIAL International
+  Conference on Advances in Geographic Information Systems (2014)\/}.
+
+\bibitem[Horton, 1945]{Horton1945}
+Horton, R.\ (1945).
+\newblock {\em Erosional development of streams and their drainage basins;
+  hydrophysical approach to quantitative morphology\/}.
+\newblock Geological society of America bulletin, 56(3):275--370.
+
+\bibitem[Knoke \btxandshort{.}\ Burt, 1983]{burt1983}
+Knoke, D. \btxandshort{.}\ R.~Burt\ (1983).
+\newblock {\em Prominence\/}.
+\newblock Applied network analysis, \btxpagesshort{.}\ 195--222.
+
+\bibitem[Mackaness \btxandshort{.}\ Mackechnie, 1999]{mackaness1999automating}
+Mackaness, W. \btxandshort{.}\ G.~Mackechnie\ (1999).
+\newblock {\em Automating the detection and simplification of junctions in road
+  networks\/}.
+\newblock GeoInformatica, 3(2):185--200.
+
+\bibitem[Mark, 1989]{mark1989}
+Mark, D.\ (1989).
+\newblock {\em Conceptual basis for geographic line generalization\/}.
+\newblock \Btxinshort{.}\ {\em Proc. 9th International Symposium on
+  Computer-Assisted Cartography (Auto-Carto 9)\/}, \btxpagesshort{.}\ 68--77.
+
+\bibitem[Page \btxetalshort{.}, 1999]{page1999}
+Page, L., S.~Brin, R.~Motwani \btxandshort{.}\ T.~Winograd\ (1999).
+\newblock {\em The PageRank Citation Ranking: Bringing Order to the Web.\/}.
+\newblock Technical Report\ 1999-66, Stanford University.
+
+\bibitem[Thomson \btxandshort{.}\ Richardson, 1999]{thomson1999}
+Thomson, R. \btxandshort{.}\ D.~Richardson\ (1999).
+\newblock {\em The "good continuation" principle of perceptual organization
+  applied to the generalization of road networks\/}.
+\newblock \Btxinshort{.}\ {\em Proc. 19th International Cartographic Conference
+  (ICC 2011)\/}, \btxpagesshort{.}\ 1215--1225.
+
+\bibitem[T{\"o}pfer \btxandshort{.}\ Pillewizer, 1966]{toepfer1966}
+T{\"o}pfer, F. \btxandshort{.}\ W.~Pillewizer\ (1966).
+\newblock {\em The principles of selection\/}.
+\newblock The Cartographic Journal, 3(1):10--16.
+
+\end{thebibliography}

@@ -1,0 +1,37 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[ansinew]{inputenc}
+\usepackage[round]{natbib}
+
+\begin{document}
+\title{Ein Test}
+\author{Jan-Henrik Haunert}
+\maketitle
+
+Dies ist ein Test, so wie er auch schon von \citet{Gemsa2011} vorbildlich vollzogen wurde.
+Oft werden Tests dagegen ohne den nötigen Sachverstand durchgeführt \citep{fhssw-alfr-12}.
+
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Fink et~al.(2012)Fink, Haunert, Schulz, Spoerhase, und
+  Wolff]{fhssw-alfr-12}
+M.~Fink, J.-H. Haunert, A.~Schulz, J.~Spoerhase, und A.~Wolff.
+\newblock Algorithms for labeling focus regions.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  18\penalty0 (12):\penalty0 2583--2592, 2012.
+
+\bibitem[Gemsa et~al.(2011)Gemsa, Haunert, und N\"{o}llenburg]{Gemsa2011}
+A.~Gemsa, J.-H. Haunert, and M.~N\"{o}llenburg.
+\newblock Boundary-labeling algorithms for panorama images.
+\newblock In \emph{Proc. 19th ACM SIGSPATIAL International Conference on
+  Advances in Geographic Information Systems (ACM GIS'11)}, pages 289--298,
+  2011.
+
+\end{thebibliography}
+
+\end{document}

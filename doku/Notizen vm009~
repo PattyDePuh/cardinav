@@ -1,0 +1,31 @@
+Addresse Virtuelle Maschine:
+vm009.rz.uos.de
+RZ-Login
+
+---------RAILS--------------
+ruby starten:
+source $(rvm 1.9.3 do rvm env --path)
+
+rails starten nach außen:
+rails s -b 131.173.22.137 -p 3000 -e development
+aufrufbar dann unter:
+131.173.22.137:3000
+
+ODER
+rails s -b cardinav.rz.uos.de -p 3000 -e development
+aufrufbar dann unter:
+cardinav.rz.uos.de:3000
+
+
+---------APACHE2-------------
+
+Apache DirectoryRoot:
+/home/paschulz/cardinav-html
+Eingestellt in:
+
+Start:
+/usr/sbin/apachectl -f /etc/apache2/apache2.conf
+Neustart:
+sudo apachectl -k restart
+
+

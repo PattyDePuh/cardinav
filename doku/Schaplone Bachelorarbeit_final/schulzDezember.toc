@@ -1,0 +1,23 @@
+\select@language {ngerman}
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}Bestehende Arbeiten}{4}
+\contentsline {section}{\numberline {3}Aufgabenstellung und Szenarien}{9}
+\contentsline {section}{\numberline {4}Grundlagen / Voraussetzungen}{10}
+\contentsline {section}{\numberline {5}Die Gleisfeldsuche}{11}
+\contentsline {subsection}{\numberline {5.1}Generierung des Gleisfeldgraphen $G_{\mathrm {Gleisfeld}}$}{11}
+\contentsline {subsection}{\numberline {5.2}Erg\"anzungen des Gleisfeldgraphen $G'_{\mathrm {Gleisfeld}}$.}{12}
+\contentsline {subsection}{\numberline {5.3}Identifizierung der Randfeatures}{13}
+\contentsline {subsection}{\numberline {5.4}Kursgraph $G_{\mathrm {Kurs}}$}{13}
+\contentsline {subsection}{\numberline {5.5}Die Wurzelsuche}{14}
+\contentsline {subsubsection}{\numberline {5.5.1}Tokenverteilung durch Breitensuche}{14}
+\contentsline {subsubsection}{\numberline {5.5.2}Auswertung der Tokenverteilung}{16}
+\contentsline {section}{\numberline {6}Implementierung}{17}
+\contentsline {section}{\numberline {7}Experimente}{18}
+\contentsline {subsection}{\numberline {7.1}Testgebiet Porrentruy}{19}
+\contentsline {subsection}{\numberline {7.2}Testgebiet Pratteln }{20}
+\contentsline {subsection}{\numberline {7.3}Testgebiet Solothurn}{21}
+\contentsline {section}{\numberline {8}Fazit}{21}
+\contentsline {section}{Literatur}{22}
+\contentsline {section}{Abbildungsverzeichnis}{22}
+\contentsline {section}{Anlagen}{24}
