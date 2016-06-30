@@ -13,5 +13,8 @@ img.center {
 #bg_icon {opacity: 0.65;}
 #bg_icon_shadow {opacity: 0.35;}
 
-.real-step.future {opacity: 0.51;}
+.real-step.future {opacity: 0.31;}
 
+.blau {
+  color: cornflowerblue;
+}
