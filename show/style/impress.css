@@ -121,7 +121,7 @@ table {
     border-spacing: 0;
 }
 
-b,strong {
+b,strong, .bold {
   font-weight:bold;
 }
 

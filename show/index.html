@@ -7,17 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Titel der Präsentation</title>
     
-    <meta name="description" content="Titel der Präsentation." />
+    <meta name="description" content="Masterprojekt cardinav" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>  
     <link rel="stylesheet" href="style/impress.css" />
     <link rel="stylesheet" href="style/style.css" />
+    
 </head>
 
 <body class="impress-not-supported">
 
 <div class="fallback-message">
-    <p>Diese auf impress.js (HTML5) basierende Präsentation sollte in einem Browser betrachtet werden, der HTML5 beherrscht.</p>
+    <p>Diese auf impress.js (HTML5) basierende Präsentation sollte in einem Browser betrachtet werden, der HTML5 und ECMAscript 6 beherrscht.</p>
     <p>Hören sie auf hinterweltlerische Browser zu verwenden!</p>
 </div>
 
@@ -41,13 +43,24 @@
   <!-- Motivation -->
   <section class="step real-step slide" data-x="-4410" data-y="-1800" data-z="-400" data-scale="1.4">
         <main>
-          <img class="center" src="res/svg/001_Uebersicht.svg" height="700"></img>
+            <p class="bold" style="width:500px; position:relative; top:40px">
+                Erkrankungen als Todesursache<br>in Deutschland 2014
+            </p>
+            <p style="width:500px;position:relative; top:40px">
+                <canvas id="death_pie_chart" width="100" height="100"></canvas>
+            </p>
+            <p class="bold" style="float:right; width:400px; position:relative; top:40px; left:-500px;">
+                Herz-/Kreislaufkrankheiten als häufigste Todeursache
+            </p>
+            <p class="bold" style="float:right; width:400px; position:relative; top:140px; left:-500px;">
+                Prävention durch Ausdauersport
+            </p>
         </main>
   </section>
 
   <!-- Übersicht -->
-  <section class="step real-step slide" data-x="0" data-y="0" data-scale="10">
-  </section>
+  <!--<section class="step real-step slide" data-x="0" data-y="0" data-scale="10">
+  </section>-->
 
 
   <!-- BLOCK Routengenerierung -->
@@ -105,7 +118,7 @@
 
   <!-- BACKGROUND -->
   <!-- Übersicht -->
-  <section class="background step slide" data-x="0" data-y="0" data-scale="10">
+  <section class="background step slide" data-x="0" data-y="0" data-z="0" data-scale="10">
         <main>
           <img class="center" src="res/svg/001_Uebersicht.svg" height="700"></img>
         </main>
@@ -156,6 +169,7 @@ if ("ontouchstart" in document.documentElement) {
 <script type="text/javascript" src="js/impress.js"></script>
 <script type="text/javascript" src="js/navigator.js"></script>
 <script type="text/javascript" src="js/sidekick_slide.js"></script>
+<script type="text/javascript" src="js/chart_init.js"></script>
 
 </body>
 </html>
