@@ -1,0 +1,770 @@
+/***********************************************************************
+*                                                                      *
+* impress.css                                                          *
+*                                                                      *
+* style sheet fuer Praesentationen, die mit impress.js erstellt werden *
+* original unter http://bartaz.github.io/impress.js                    *
+* fuer ub bielefeld angepasst von sebastian wolf                       * 
+* version 1.01, 20.06.2013                                             *
+*                                                                      *
+***********************************************************************/
+
+/* Reset der Standard-Stile */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+/* Einbindung von Webfonts */
+
+@font-face { 
+    font-family:'Open Sans'; 
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face { 
+    font-family:'Open Sans'; 
+    font-weight:normal;
+    font-style:italic;
+}
+
+@font-face { 
+    font-family:'Open Sans'; 
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face { 
+    font-family:'Open Sans'; 
+    font-weight:bold;
+    font-style:italic;
+}
+
+@font-face { 
+    font-family:'PT Serif'; 
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+@font-face { 
+    font-family:'PT Serif'; 
+    font-weight:normal;
+    font-style:italic;
+}
+
+@font-face { 
+    font-family:'PT Serif'; 
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face { 
+    font-family:'PT Serif'; 
+    font-weight:bold;
+    font-style:italic;
+}
+
+/* Allgemeine Angaben */
+
+body {
+    font-family:'Open Sans', Arial, sans-serif;
+    min-height: 740px;
+
+    background: rgb(255, 255, 255);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(240, 255, 240)));
+    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(240, 255, 240));
+    background:    -moz-radial-gradient(rgb(255, 255, 255), rgb(240, 255, 240));
+    background:     -ms-radial-gradient(rgb(255, 255, 255), rgb(240, 255, 240));
+    background:      -o-radial-gradient(rgb(255, 255, 255), rgb(240, 255, 240));
+    background:         radial-gradient(rgb(255, 255, 255), rgb(240, 255, 240));
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+b,strong {
+  font-weight:bold;
+}
+
+i,em {
+  font-style:italic;
+}
+
+/* Kopfbereich */
+
+header {
+    height:100px;
+    opacity:0.75;
+}
+
+/* Maximalgroesse von zus. Grafiken im header-Bereich nicht groesser als die Hintergrundgrafik */
+
+header img {
+    width:auto;
+    max-height:74px;
+    float:right;
+}
+
+/* Linie vor dem Text auf einer Folie */
+
+main:before {
+    clear: both;
+    content: ".";
+    display: block;
+    height:1px;
+    border-bottom:0px solid rgba(182, 200, 40, 1.0);
+    box-shadow:0 2px 6px rgba(0, 0, 0, .1);
+    margin:0 -60px;
+    font-size:0.01em;
+}
+
+/* Fussbereich immer am Ende einer Folie positionieren */
+
+footer {
+  position:absolute;
+  bottom:20px;
+  left:50px;
+  z-index:9999;
+  font-size:18px;
+  line-height:1.5;
+}
+
+/* Links */
+
+a {
+    color: #309;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+/* Bedienungshinweis */
+
+.hint {
+    display: none;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 4.5em;
+
+    background: rgba(255,255,255,0.5);
+    color: #000;
+    text-align: center;
+
+    font-size: 50px;
+    padding: 20px;
+
+    z-index: 100;
+
+    opacity: 0;
+
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+/* Der Bedienungshinweis wird nur fuer HTML5-faehige Browser angezeigt */
+
+.impress-enabled .hint { 
+    display: block 
+}
+
+/* Die aktive Folie hat die Klasse impress-on-ID, der Hinweistext erscheint bei der Folie mit dem ID 'start', also der ersten Folie */
+
+.impress-on-start .hint {
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+.impress-enabled { 
+    pointer-events: none;
+}
+
+.impress-enabled #impress { 
+    pointer-events: auto;
+}
+
+/* Hinweistexte fuer Browser, die nicht HTML5-faehig sind */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+/* Hinweistexte ausblenden, fuer Browser die HTML5-faehig sind */
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/* Schritt */
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+
+.impress-enabled .step {
+    margin: 0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-on-overview .step.hide, .impress-enabled .hide {
+    opacity:0;
+}
+
+.impress-enabled .step.active { 
+    opacity: 1;
+}
+
+
+/* Bei mehrteiligen Folien, nicht-aktive Folien komplett ausblenden */
+
+.impress-enabled .multi { opacity: 0.00; }
+
+/* Standard-Folie */
+
+.slide {
+    display: block;
+
+    width: 1500px;
+    height: 800px;
+    padding: 20px 60px;
+    overflow:hidden;
+
+    border: 0px solid rgba(182, 200, 40, 1.0);
+    border-radius: 10px;
+
+    color: rgb(0,0,0);
+    text-shadow: 4px 4px 2px rgba(155, 155, 155, .1);
+
+    font-size:32px;
+    line-height:1.3;
+    letter-spacing: -1px;
+}
+
+/* 'blanke' Folie fuer Zwischentitel */
+
+section.blank {
+    padding:0;
+    font-family:'PT Serif', Georgia, serif;
+}
+
+section.blank header, section.blank main:before {
+  display:none;
+}
+
+/* 'blanker' Header ohne Logo */
+
+header.blank {
+    background:#fff;
+}
+
+/* Text-Animationen */
+
+/* Wie schnell sollen die Animationseffekte insgesamt ablaufen */
+
+.animation span {
+    display: inline-block;
+    -webkit-transition: 1.25s;
+    -moz-transition:    1.25s;
+    -ms-transition:     1.25s;
+    -o-transition:      1.25s;
+    transition:         1.25s;
+}
+
+/* Wie weit soll der Text nach unten fallen */
+
+.animation.present .positioning {
+    -webkit-transform: translate(-325px,180px);
+    -moz-transform:    translate(-325px,180px);
+    -ms-transform:     translate(-325px,180px);
+    -o-transform:      translate(-325px,180px);
+    transform:         translate(-325px,180px);
+}
+
+/* Wie weit soll sich der Text drehen */
+
+.animation.present .rotating {
+    -webkit-transform: rotate(-750deg);
+    -moz-transform:    rotate(-750deg);
+    -ms-transform:     rotate(-750deg);
+    -o-transform:      rotate(-750deg);
+    transform:         rotate(-750deg);
+
+    /* zusaetzliche Verzoegerung, damit der Effekt erst nach 'positioning' ablaueft */
+    
+    -webkit-transition-delay: 0.45s;
+    -moz-transition-delay:    0.45s;
+    -ms-transition-delay:     0.45s;
+    -o-transition-delay:      0.45s;
+    transition-delay:         0.45s;
+}
+
+/* Wie weit soll der Text skaliert werden */
+
+.animation.present .scaling {
+    -webkit-transform: scale(2.3);
+    -moz-transform:    scale(2.3);
+    -ms-transform:     scale(2.3);
+    -o-transform:      scale(2.3);
+    transform:         scale(2.3);
+
+    /* zusaetzliche Verzoegerung, damit der Effekt erst nach 'positioning' und 'rotating' ablaueft */
+
+    -webkit-transition-delay: 0.85s;
+    -moz-transition-delay:    0.85s;
+    -ms-transition-delay:     0.85s;
+    -o-transition-delay:      0.85s;
+    transition-delay:         0.85s;
+}
+
+/* Die Uebersichts-Folie ausblenden fuer nicht HTML5-faehige Browser */
+
+#overview { 
+  display: none; 
+}
+
+/* Auf der Uebersichtsfolie alle Folien anzeigen */
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Ueberschriften */
+
+h1, h2, h3, h4 {
+    margin:0.25em 0;
+    font-weight:bold;
+}
+
+h1 {
+    font-size:2.2em;
+    color:#000;
+}
+
+h2 {
+    font-size:2em;
+}
+
+h3 {
+    font-size:1.2em;
+}
+
+h4 {
+    font-size:1em;
+}
+
+section.blank h1 {
+    font-size:3.15em;
+    text-shadow:14px 14px 2px rgba(0, 0, 0, .1);
+    font-weight:normal;
+    margin:0;
+}
+
+header h1 {
+  margin:0;
+  color:#000;
+  opacity: 1.0;
+}
+
+hgroup h1 {
+    font-size:3em;
+    line-height:0.9;
+    margin:0.3em 0;
+}
+
+hgroup h2 {
+    font-size:1em;
+    line-height:1.2;
+}
+
+/* Grafiken */
+
+img.vollbild {
+  width:770px;
+  height:auto;
+}
+
+/* Listen */
+
+ul li {
+    list-style-type:square;
+    margin:0 0 0 30px;
+    padding:0 0 0.75em 25px;
+    color:#b6c828;
+    color: rgb(102, 102, 102);
+}
+
+ol li {
+    margin:20px 0 0 45px;
+    padding:0 0 0.25em 0;
+}
+
+ul.kompakt, ol.kompakt {
+  margin-top:-10px;
+}
+
+ul.kompakt li {
+    padding-bottom:0.35em;
+}
+
+ol.kompakt li {
+    padding-bottom:0;
+    line-height:1;
+}
+
+p {
+  margin:0.5em 0;
+}
+
+/* Vorformattierter Text, Code */
+
+pre {
+    background: none repeat scroll 0 0 #000000;
+    border: 1px solid #E0E0E0;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0;
+    margin:1em 0;
+}
+
+.mehrspaltig pre {
+    margin:0 0 1em;
+}
+
+code {
+    font-family:monospace;
+    /* font-weight:bold; */
+    color:#999;    
+}
+
+/* Tabellen */
+
+table {
+    padding:0;
+    margin:10px 0 0; 
+    border-collapse:collapse;
+    width:100%;
+}
+
+/* Tabellenkopf farbig */
+
+table thead {
+    background-color:#fff;
+}
+
+table tfoot {
+  font-style:italic;
+}
+
+table.erstespalte thead {
+    background-color:#fff;
+}
+
+table th, table td {
+    border:1px solid #ccc;
+    margin:0;
+    width:33%;
+}
+
+table th {
+    font-weight:bold;
+    vertical-align:middle;
+    padding:0.2em;
+}
+
+table td {
+    vertical-align:top;
+    padding:0.2em 0.5em;
+}
+
+table.zebrastreifen tr:nth-child(even) { /* gerade tabellenzeilen (2,4,6 ...) farbig */
+    background-color:#eee;
+}
+
+table.zebraspalten td:nth-child(even) { /* gerade tabellenspalten (2,4,6 ...) farbig */
+    background-color:#eee;
+}
+
+table.zebraspalten th:nth-child(odd) { /* ungerade tabellenspalten auch in der ueberschrift weiss */
+    background-color:#fff;
+}
+
+table.erstespalte th:first-child, table.erstespalte td:first-child { /* erste spalte farbig */
+    background-color:#eee;
+}
+
+
+/* Formulare */
+
+form {
+  margin:1em 0;
+}
+
+form div:after {
+  clear:              both;
+  content:            ".";
+  display:            block;
+  height:             10px;
+  visibility:         hidden;
+  
+}
+
+label, input {
+  float:left;
+}
+
+label {
+width:3.5em;
+}
+
+input, .check :invalid, .check :valid {
+  width:15em;
+  margin-left:1em;
+}
+
+form:after {
+  clear:              both;
+  content:            ".";
+  display:            block;
+  height:             0;
+  visibility:         hidden;
+}
+
+[required] {
+  border: 2px solid #333;
+  box-shadow: 0 0 3px rgba(0, 0, 255, .5);
+}
+
+.check :invalid {
+  border: 5px solid #f00;
+  box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+}
+
+.check :valid {
+  border: 2px solid #0f0;
+  box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+}
+
+input[type=text] {
+  background: #000;
+}
+
+button, .button {
+border:2px solid #b6c828;
+border-radius:10px;
+padding:10px;
+background-color:#eff3d7;
+}
+
+button {
+  margin:2em 0;
+}
+
+/* Tabs */
+
+.tab {
+border:1px solid #b6c828;
+background-color:#fff;
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom:0;
+padding:0 15px;
+}
+
+/* Texteffekte */
+
+.klein {
+  font-size:75%;
+}
+
+.gross {
+  font-size:200%;
+}
+
+.blass {
+  opacity:0.3;
+}
+
+header .blass { /* Da der header schon auf 0.75 abgeblasst ist, muss bei blassen images im header die opacity etwas weniger stark sein */
+  opacity:0.4;
+}
+
+.schmal {
+  letter-spacing:-0.07em;
+}
+
+.breit {
+  letter-spacing:0.2em;
+}
+
+.extrabreit {
+  letter-spacing:0.5em;
+  white-space:nowrap;
+}
+
+/* Mehrspaltiger Text */
+
+.mehrspaltig {
+-webkit-column-count: 2; 
+-webkit-column-rule: 1px solid #bbb;
+-webkit-column-gap: 2em;
+-moz-column-count: 2;
+-moz-column-rule: 1px solid #bbb;
+-moz-column-gap: 2em;
+-column-count: 2; 
+-column-rule: 1px solid #bbb;
+-column-gap: 2em;
+}
+
+/* Fest verankerter Text ausserhalb der Praesentation */
+
+#kopf, #fuss {
+  position:fixed;
+  left:1em;
+  pointer-events: auto;
+}
+
+#kopf a, #fuss a {
+  font-size:82%;
+  background-color:inherit;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+#kopf {
+  top:1em;
+  color: black;
+}
+
+#fuss {
+  bottom:0em;
+  color: black;
+  width: 96%;
+}
+
+/*Fußzeile links*/
+.ref_name {
+  float: left;
+  left: 1em;
+}
+
+/*Fußzeile rechts*/
+.modul_name {
+  float: right;
+  text-align: right;
+  right: 1em;
+}
+
+.center {
+  text-align: center;
+}
