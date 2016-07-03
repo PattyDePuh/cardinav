@@ -11,11 +11,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/Chart.min.js"></script>  
+
+    <!-- CSS-Styles -->
     <link rel="stylesheet" href="style/impress.css" />
     <link rel="stylesheet" href="style/style.css" />
     
+    <!-- MathJax - Bibliothek Initialisierung -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+      });
+    </script>
+    <script type="text/javascript" src="js/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
 </head>
 
+<!-- Body -->
 <body class="impress-not-supported">
 
 <div class="fallback-message">
@@ -143,7 +153,7 @@
   <!-- Erklärung -->
   <section class="step real-step slide" data-x="-1780" data-y="-2250" data-z="-400" data-scale="1.4">
         <main>
-          <img class="center" src="res/svg/001_Uebersicht.svg" height="700"></img>
+          <p> $$ a = b² + c² $$ </p>
         </main>
   </section>
 
@@ -237,6 +247,7 @@ if ("ontouchstart" in document.documentElement) {
 <script type="text/javascript" src="js/navigator.js"></script>
 <script type="text/javascript" src="js/sidekick_slide.js"></script>
 <script type="text/javascript" src="js/chart_init.js"></script>
+<script type="text/javascript" src="js/mathjax_border_fix.js"></script>
 
 </body>
 </html>
