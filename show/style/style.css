@@ -4,8 +4,19 @@
 }
 
 img.center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.right {
+	float:right;
+  position:relative;
+  right: 0px;
+}
+
+.bottom_rel{
+	position: relative;
+	bottom: 0px;
 }
 
 .background {opacity: 0.95;}
