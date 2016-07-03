@@ -748,6 +748,7 @@ header .blass { /* Da der header schon auf 0.75 abgeblasst ist, muss bei blassen
 #kopf {
   top:1em;
   color: black;
+  opacity: 0.04;
 }
 
 #fuss {
