@@ -165,13 +165,45 @@
 
 
   <!-- BLOCK dynamische Programmierung -->
-  <!-- Erklärung -->
+  <!-- Historie -->
   <section class="step real-step slide" data-x="-1780" data-y="1000" data-z="-400" data-scale="1.4">
         <main>
-          <img class="center" src="res/svg/001_Uebersicht.svg" height="700"></img>
+          <p class="blau bold">Definition von <span class="markant">Bellman</span> (1957)</p>
+          <ul class="bold">
+            <li>Hauptproblem in Teilprobleme zerlegbar.</li>
+            <li>Wiederverwendung von Teillösungen zur Lösung des Hauptproblems</li>
+          </ul>
+          <p class="blau bold">All-Pair-Shortest-Path Algorithmus von <span class="markant">Floyd</span> (1962)</p>
+          <ul class="bold">
+            <li>Verläuft die kürzeste Route $i \to j$ durch Knoten $k$, <br>dann sind die Teilrouten $i \to k$ und $k \to j$ optimal.</li>
+          </ul>
+          <p class="blau bold">Erreichbarkeits Algorithmus von <span class="markant">Warshall</span> (1962)</p>
+          <ul class="bold">
+            <li>Knoten $i$ ist von $j$ erreichbar, wenn es einen Knoten $k$ gibt, <br>
+            der von $i$ erreichbar ist und $j$ von $k$ erreichbar ist.</li>
+          </ul>          
         </main>
   </section>
-
+  <section class="step real-step slide" data-x="-1780" data-y="1000" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold right" style="top:280px; text-align:center">Laufzeit für beide: <br> <span class="gross">$O(n³)$</span> <br> wenn $n=$ Anzahl Knoten</p>     
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="-1780" data-y="1900" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold">Abwandlung zum Single-Source-Shortest-Path</p>
+          <ul class="bold">
+            <li>Besonderheit: Mehrere Wege zum Startknoten mit verschiedenen Kosten</li>
+            <li>Vorraussetzung: Kosten $c$ ganzzahlig und im <i>annehmbaren</i> Zahlenbereich</li>
+          </ul>    
+        </main>
+  </section>
+  <!-- Spezialfall-Kette -->
+  <section class="step real-step slide" data-x="-1780" data-y="2400" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold right" style="top:280px; text-align:center">Laufzeit: <br> <span class="gross">$O(n³)$</span> <br> wenn $n=$ Anzahl Knoten</p>     
+        </main>
+  </section>
 
   <!-- BLOCK Leistungsprofiloptimierung -->
   <!-- Erklärung -->
