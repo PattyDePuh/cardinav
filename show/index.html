@@ -194,14 +194,40 @@
           <p class="blau bold">Abwandlung zum Single-Source-Shortest-Path</p>
           <ul class="bold">
             <li>Besonderheit: Mehrere Wege zum Startknoten mit verschiedenen Kosten</li>
-            <li>Vorraussetzung: Kosten $c$ ganzzahlig und im <i>annehmbaren</i> Zahlenbereich</li>
+            <li>Vorraussetzung: Kosten $c$ positiv, ganzzahlig und im <i>annehmbaren</i> Zahlenbereich</li>
           </ul>    
         </main>
   </section>
+  <section class="step real-step slide" data-x="-1780" data-y="1900" data-z="-400" data-scale="1.4">
+        <main>
+          <p style="width:700px; height:80px; position:relative; top:200px; float:left;">
+            Schleife über alle Kosten $c \to 0..k$<br>
+            Schleife über alle Knoten $n \to A..F$<br> 
+          </p>
+          <img class="right" style="position:relative; top:200px;" src="res/svg/033_Azyklischer_Graph.svg" width="640"></img>
+          <p style="width:680px; height:40px; position:relative; top:200px; left:50px; float:left;">
+            Für jede eingehende Kante $b$ von Knoten $a$ zu $n$:
+          </p>
+          
+          <p style="width:620px; height:40px; position:relative; top:200px; left:80px; float:left;">
+            <b>Wenn</b> Knoten $a$ mit Kosten ($c-dist(b)$) erreichbar ist, dann ist $n$ mit Kosten $c$ über $a$ erreichbar.<br>
+          </p>
+          <img class="right" style="position:relative; top:200px;" src="res/png/402_Tabelle_SSSP.png" width="640"></img>
+          
+        </main>
+  </section>
   <!-- Spezialfall-Kette -->
+  <section class="step real-step slide" data-x="-1780" data-y="2300" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold" style="width:700px; height:80px; position:relative; top:280px;">Auswahlkriterium einbaubar.</p>
+          <p style="width:700px; height:80px; position:relative; top:300px;">$\to$ Zweite Kostenklasse</p> 
+        </main>
+  </section>
   <section class="step real-step slide" data-x="-1780" data-y="2400" data-z="-400" data-scale="1.4">
         <main>
-          <p class="blau bold right" style="top:280px; text-align:center">Laufzeit: <br> <span class="gross">$O(n³)$</span> <br> wenn $n=$ Anzahl Knoten</p>     
+        <p class="blau bold" style="width:700px; height:80px; position:relative; top:460px;">Optimierung für den Spezialfall</p>
+        <p style="width:900px; height:80px; position:relative; top:460px;">Graph ist eine Kette $\to$ es existiert nur ein Vorgänger.</p>
+        <img class="right" style="position:relative; top:160px;" src="res/svg/031_Graphkette.svg" height="180px"></img>   
         </main>
   </section>
 
