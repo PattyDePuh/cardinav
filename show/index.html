@@ -225,9 +225,9 @@
   </section>
   <section class="step real-step slide" data-x="-1780" data-y="2400" data-z="-400" data-scale="1.4">
         <main>
-        <p class="blau bold" style="width:700px; height:80px; position:relative; top:460px;">Optimierung für den Spezialfall</p>
-        <p style="width:900px; height:80px; position:relative; top:460px;">Graph ist eine Kette $\to$ es existiert nur ein Vorgänger.</p>
-        <img class="right" style="position:relative; top:160px;" src="res/svg/031_Graphkette.svg" height="180px"></img>   
+          <p class="blau bold" style="width:700px; height:80px; position:relative; top:460px;">Optimierung für den Spezialfall</p>
+          <p style="width:900px; height:80px; position:relative; top:460px;">Graph ist eine Kette $\to$ es existiert nur ein Vorgänger.</p>
+          <img class="right" style="position:relative; top:160px;" src="res/svg/031_Graphkette.svg" height="180px"></img>   
         </main>
   </section>
 
@@ -235,7 +235,84 @@
   <!-- Erklärung -->
   <section class="step real-step slide" data-x="880" data-y="-2200" data-z="-400" data-scale="1.4">
         <main>
-          <img class="center" src="res/svg/001_Uebersicht.svg" height="700"></img>
+          <p class="blau bold" style="width:700px; height:80px; position:relative; top:50px;">Modellaufbau</p>
+          <ul class="bold">
+            <li>Gegebene Route $R$ ist in $n$ Etappen aufgeteilt: <span style="width:50px"></span>  $e_n \in R$</li>
+            <li></li>
+          </ul>
+          <img class="center" style="position:relative; top:0px;" src="res/svg/040_Power_on_Way.svg" height="420"></img>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="-2200" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold" style="width:700px; height:80px; position:relative; top:50px;">Modellaufbau</p>
+          <ul class="bold">
+            <li></li>
+            <li>terrestrische Eigenschaften innerhalb einer Etappe sind identisch</li>
+          </ul>
+          <img class="center" style="position:relative; top:0px;" src="res/svg/041_Power_on_Way.svg" height="420"></img>
+        </main>
+  </section>
+  <!-- Graphaufbau -->
+  <section class="step real-step slide" data-x="880" data-y="-1900" data-z="-400" data-scale="1.4">
+        <main>
+          <ul class="bold" style="position:relative; top:460px;">
+            <li>Laufgeschwindigkeiten $V_m$ und Streckenlänge der Etappen $e_n$ sind bekannt.</li>
+            <li>$\to$Laufzeit $c(n,m)$ berechenbar. $\to$ <b>Kostentyp 1</b></li>
+          </ul>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="-1600" data-z="-400" data-scale="1.4">
+        <main>
+          <img class="center" style="position:relative; top:400px;" src="res/svg/042_Graphkette_mit_Kosten.svg" height="280"></img>
+        </main>
+  </section>
+  <!-- Zweiter Kostentyp -->
+  <section class="step real-step slide" data-x="880" data-y="-1100" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold" style="width:700px; height:80px; position:relative; top:380px;">Zweiter Kostentyp</p>
+          <ul class="bold" style="position:relative; top:380px;">
+            <li>Zur Entscheidung, welche Route bevorzugt wird.</li>
+            <li>Divergenzkosten zwischen errechnetem Energieverbrauch <br>
+            und dem gewünschten Niveau von $f(t)$</li>
+          </ul>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="-600" data-z="-400" data-scale="1.4">
+        <main>
+          <img class="center" style="position:relative; top:300px;" src="res/svg/043_Proposed_Power.svg" height="380"></img>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="-400" data-z="-400" data-scale="1.4">
+        <main>
+          <img class="center" style="position:relative; top:158px;" src="res/svg/044_Proposed_Power.svg" height="380"></img>
+          <ul class="bold" style="position:relative; top:160px;">
+            <li>Zeitpunkt $a$ des Etappenbeginns und -dauer $b$ sind bekannt $\to$ Zeitintervall über $f(t)$</li>
+            <li></li>
+          </ul>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="-400" data-z="-400" data-scale="1.4">
+        <main>
+          <img class="center" style="position:relative; top:158px;" src="res/svg/045_Proposed_Power.svg" height="380"></img>
+          <ul class="bold" style="position:relative; top:160px;">
+            <li></li>
+            <li>Verschiedene Möglichkeiten zur Ermittlung eines vertretbaren Wertes innerhalb des Intervalls</li>
+          </ul>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="320" data-z="-400" data-scale="1.4">
+        <main>
+          <ul class="bold" style="position:relative; top:200px;">
+            <li>Differenz zwischen Energieverbrauch und Soll-Niveau ergeben den Kostentyp 2</li>
+          </ul>
+          <img class="center" style="position:relative; top:240px;" src="res/svg/046_Graphkette_mit_beiden_Kosten.svg" height="280"></img>
+          
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="920" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold markant" style="width:700px; height:80px; position:relative; top:180px;">Der Algorithmus</p>
         </main>
   </section>
 
@@ -249,7 +326,7 @@
   </section>
 
 
-  <!-- BLOCK Umsetzung -->
+  <!-- BLOCK Fazit -->
   <!-- Erklärung -->
   <section class="step real-step slide" data-x="3880" data-y="1000" data-z="-400" data-scale="1.4">
         <main>
