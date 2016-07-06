@@ -1,4 +1,4 @@
-setTimeout('start_fix()', 1000);
+setTimeout('start_fix()', 2000);
 
 function start_fix(){
 	$("span").css("border-color", "#FFFFFF");
