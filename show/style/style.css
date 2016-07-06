@@ -35,4 +35,18 @@ img.center {
   color: cornflowerblue;
 }
 
+.gruen{
+	color: green;
+}
+
+.orange{
+	color: orange;
+}
+
+.url{
+	font-family: monospace;
+	margin: 5px;
+	opacity: 0.8;
+}
+
 span{border-color:#FFFFFF}
