@@ -373,11 +373,56 @@
           
         </main>
   </section>
+  <!-- Der Algorithmus -->
   <section class="step real-step slide" data-x="880" data-y="920" data-z="-400" data-scale="1.4">
         <main>
           <p class="blau bold markant" style="width:700px; height:80px; position:relative; top:180px;">Der Algorithmus</p>
+          <ul style="position:relative; top:180px;">
+            <li>Tabelle $W \to$ bevorzugter Zeitpunkt der Vorgängeretappe</li>
+            <li>Tabelle $C_2 \to$ Divergenzkosten bis zur betroffenen Etappe.</li>
+          </ul>
         </main>
   </section>
+  <section class="step real-step slide" data-x="880" data-y="920" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="url" style="position:relative; top:480px;">
+            Schleife über alle Zeiten $t_j \to t_0..t_{max}$
+          </p>
+          <p class="url" style="position:relative; top:480px; left:40px">
+            Schleife über alle Etappen $e_i \to e_0..e_n$
+          </p>
+          <p class="url" style="position:relative; top:480px; left:80px">
+            Schleife über alle Laufstufen $v_k \to V_0..V_m$
+          </p>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="1140" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="url" style="position:relative; top:480px; left:120px">
+            <b>Wenn</b> Vorgänger $e_{i-1}$ zum Zeitpunkt $t_j-C_1[e{i-1},v_k]$ erreichbar ist
+          </p>
+          <p class="url" style="position:relative; top:480px; left:160px">
+            <b>Wenn</b> die errechneten Divergenzkosten $c_2'$ kleiner sind als bisher
+          </p>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="1340" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="url" style="position:relative; top:480px; left:200px">
+            <b>Dann</b> übernimm neuen Vorgängerzeitpunkt und Divergenzkosten <br>
+            jeweils in $W[e_i, t_j]$ &amp; $C_2[e_i, t_j]$
+          </p>
+        </main>
+  </section>
+  <section class="step real-step slide" data-x="880" data-y="1840" data-z="-400" data-scale="1.4">
+        <main>
+          <p class="blau bold" style="position:relative; top:80px; left:50px">
+            Auswertung
+          </p>
+          
+        </main>
+  </section>
+
 
   <!-- Übersicht -->
   <section class="step real-step slide" data-x="3880" data-y="-2600" data-z="-400" data-rotate-y="-10" data-scale="3">
