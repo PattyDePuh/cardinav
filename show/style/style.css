@@ -43,6 +43,10 @@ img.center {
 	color: orange;
 }
 
+.rot{
+	color: red;
+}
+
 .url{
 	font-family: monospace;
 	margin: 5px;
